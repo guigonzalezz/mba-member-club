@@ -6,8 +6,8 @@ const giftProgressCardInnerBar = giftProgressCard.querySelector("header .inner-b
 export async function updateGiftProgressCard({ loyaltyCard }) {
   const { totalCuts, cutsRemaining, cutsNeeded } = loyaltyCard;
 
-  giftProgressCardTitle.innerHTML = `${cutsRemaining} <span>cortes restantes</span>`;
-  giftProgressCardLeft.textContent = `${totalCuts} de ${cutsNeeded}`;
+  giftProgressCardTitle.innerHTML = `${cutsRemaining} <span>left cuts</span>`;
+  giftProgressCardLeft.textContent = `${totalCuts} of ${cutsNeeded}`;
 
   giftProgressCardInnerBar.style.width = `${((totalCuts / cutsNeeded) * 100).toFixed(2)}%`;
 }
