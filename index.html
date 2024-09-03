@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="src/assets/Logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Member Club</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="src/assets/Logo.png" alt="Member Club logo" class="logo" />
+
+      <form class="card-id-input">
+        <label for="card-id">Card ID</label>
+        <input
+          id="card-id"
+          name="card-id"
+          type="text"
+          minlength="15"
+          maxlength="15"
+          placeholder="Card ID"
+        />
+        <button type="submit">
+          <img src="src/assets/icons/ArrowElbowDownLeft.svg" alt="" />
+        </button>
+      </form>
+
+      <div id="dashboard">
+        <div class="card profile-info">
+          <div id="profile-pic">
+            <img src="" alt="" />
+          </div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card history">
+          <header>
+            <h5>HISTORY</h5>
+            <span></span>
+          </header>
+          <ul id="appointments"></ul>
+        </div>
+        <div class="card fidelity">
+          <header>
+            <div>
+              <h5>LOYALTY CARD</h5>
+              <span>After getting haircuts, the tenth one is free!</span>
+            </div>
+            <div class="user-id-tag">
+              <h4></h4>
+            </div>
+          </header>
+
+          <div class="stamps"></div>
+        </div>
+
+        <div class="card gift-progress">
+          <header>
+            <h2></h2>
+            <div class="progress-info">
+              <div class="progress-bar">
+                <div class="inner-bar"></div>
+              </div>
+              <p>7 out of 10</p>
+            </div>
+          </header>
+          <div class="gift">
+            <img src="src/assets/PinGift.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gift-achieved-modal">
+      <div>
+        <h2>Congratulations!</h2>
+        <h3>🎉🎉🎉</h3>
+        <h4>Your next haircut is free!</h4>
+        <img src="src/assets/PinGift.png" alt="" />
+        <button class="close-x">
+          <img src="src/assets/icons/Close-X.svg" alt="close" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
